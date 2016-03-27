@@ -80,7 +80,7 @@ limite();
 
 
 */
-
+/*
 function numeroALaZlimites(LimiteInferior, LimiteSuperior)
 {
 	if( isNaN(LimiteInferior) || isNaN(LimiteSuperior))
@@ -104,4 +104,87 @@ while(contador<10)
 	document.write(randomico+" ");
 	contador++;
 }
+*/
+/*
+function numeroALaZlimites(LimiteInferior, LimiteSuperior)
+var LimiteInferior=1;
+var LimiteSuperior=10;
+var numeroAdivinable= Math.floor(Math.random()*10)+1;
+while (numeroAzar===numeroAdivinable)
+{
+	numeroAdivinable=true;
+	)
+{
+	if( isNaN(LimiteInferior) || isNaN(LimiteSuperior))
+	{
+		throw new Error("Valor ingresado no corresponde a un numero");
+	}
+	var num = Math.round((Math.random())* (LimiteSuperior-LimiteInferior))+ LimiteInferior;
+
+return num;
+}
+  alert("su numero al azar es:"+ numeroALaZlimites(parseInt(LimiteInferior),
+ 	parseInt(LimiteSuperior)));
+var contador=0;
+while(contador<10)
+{
+	var randomico= numeroALaZlimites(parseInt(LimiteInferior),
+		parseInt(LimiteSuperior));
+	document.write(randomico+" ");
+	contador++;
+}
+*/
+
+/*function numeroAzarlimite()
+{
+var numero=Math.floor(Math.random()*100)+1;
+return numero;
+}
+var numeroAzar =numeroAzarlimite();
+var cont=0;
+while(true)
+{
+	cont=cont+1;
+	numero2=numeroAzarlimite();
+	if (numeroAzar===numero2)
+	{
+		alert("el numero era:" +numeroAzar);
+		alert("el numero adivinado es:" + numero2);
+		break;
+	}
+
+}
+alert("El numero de intentos es" + cont);
+*/
+
+
+
+
+
+
+function numeroAzarlimite(limitesdados){
+
+	//var limite=Math.floor(Math.random()*100)+1;
+//return limite;
+	
+return Math.floor(Math.random() *limitesdados)+1;
+}
+
+var contador=0;
+
+var numAdivinar = numeroAzarlimite(100);
+
+while(true)
+{
+	var numAdv2 = numeroAzarlimite(100);
+	contador++;
+	
+	if (numAdv2== numAdivinar) {
+		break;
+	}
+}
+
+alert("El numero es: "+numAdivinar);
+alert("El numero adivinado"+ numAdv2);
+alert("El numero de repeticiones: " + contador);
 
