@@ -19,7 +19,7 @@ console.log("La longitud de la clave es: " + clave.length);**/
 /*var clave = prompt("Hola Usuario, Ingrese su clave en minusculas!");
 console.log("La longitud de la clave es: " + clave.length);
 console.log("TA-DA!!! Su clave es: " + clave.toUpperCase());
-console.log("El valor original de la clave es: " +  clave);*/
+console.log("El valor original de la clave es: " +  clave);   */
 
 
 /*console.log("Inicio del PROGRAMA");
@@ -29,7 +29,7 @@ alert("Dado dice:"+ dado);
 console.log("Programa completado");
 */
 
-document.write("<h1>ADIVINA EL NUMERO!</h1>");
+/*document.write("<h1>ADIVINA EL NUMERO!</h1>");
 var adivinoCorrectamente=false;
 var numeroAdivinable= Math.floor(Math.random()*10)+1;
 var numeroUsuario= prompt("CUAL PIENSAS QUE ES EL NUMERO SECRETO(del 1 al 10)?");
@@ -64,4 +64,10 @@ else {
 }
 
 console.log("programa Terminado");
+*/
 
+console.log("Inicio del PROGRAMA");
+var equipo = prompt("Ingrese un numero");
+var dado= Math.floor(Math.random() *equipo);
+alert("Dado dice:"+ dado);
+console.log("Programa completado");
