@@ -23,7 +23,8 @@ console.log("El valor original de la clave es: " +  clave);*/
 
 
 console.log("Inicio del PROGRAMA");
-var dado= Math.floor(Math.random() *6) +1;
+var equipo = prompt("Ingrese un numero");
+var dado= Math.floor(Math.random() *equipo);
 alert("Dado dice:"+ dado);
 console.log("Programa completado");
 
